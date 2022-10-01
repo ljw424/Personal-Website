@@ -293,7 +293,7 @@ ul {
 
   .container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 350px 400px 600px 300px 300px 500px 100px 800px 200px;
+    grid-template-rows: 150px 250px 400px 600px 300px 300px 500px 100px 800px 200px;
     color: #f2f2da;
     grid-template-areas:
       "nav nav nav nav nav nav"
