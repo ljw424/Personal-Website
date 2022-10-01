@@ -60,7 +60,7 @@ a:hover {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 600px 400px auto 400px auto 400px auto auto auto 400px auto auto auto;
+  grid-template-rows: 200px 400px 400px auto 400px auto 400px auto auto auto 400px auto auto auto;
   color: #f2f2da;
   grid-template-areas:
     "nav"
