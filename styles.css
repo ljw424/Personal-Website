@@ -1,0 +1,823 @@
+/*Page Styles*/
+* {
+  box-sizing: border-box;
+  margin: 0 0.5rem;
+  padding: 0;
+  font-family: 'Lora', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: #59a0aa;
+  font-weight: 400;
+}
+
+/* unvisited link */
+a:link {
+  color: #aaaaaa;
+  font-size: 1.2rem;
+}
+
+/* visited link */
+a:visited {
+  color: #b86e7d;
+  font-size: 1.2rem;
+}
+
+/* mouse over link */
+a:hover {
+  color:#031926;
+  font-size: 1.2rem;
+}
+
+.email {
+  padding: 1rem;
+}
+
+
+
+/*Grid Container Mobile*/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 600px 400px auto 400px auto 400px auto auto auto 400px auto auto auto;
+  color: #f2f2da;
+  grid-template-areas:
+    "nav"
+    "header"
+    "whoiam"
+    "main"
+    "dream"
+    "qual"
+    "sign"
+    "quotedahl"
+    "quoteeliot"
+    "skills"
+    "possible"
+    "interestsheading"
+    "interests"
+    "footer";
+  gap: 1rem;
+  margin-top: 1rem;
+
+}
+
+/*Mobile Div Styling*/
+
+.navbar {
+  background-color: #243446;
+  grid-area: nav;
+}
+
+header {
+  background-color: #243446;
+  grid-area: header;
+  padding: 2rem 1rem;
+  border: #356167 solid 0.5rem;
+}
+
+main {
+  background-color:#356167;
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  padding: 2rem 1rem;
+  line-height: 1.5rem;
+  border: #222548 solid 0.5rem;
+}
+
+main li {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.teacherheading {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+ 
+}
+
+.teacherend {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+
+}
+
+.whoiam {
+  grid-area: whoiam;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-image: url(assets/thisiswhoiam2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dream {
+  grid-area: dream;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(assets/dream2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.qual {
+  background-color: #222548;
+  grid-area: qual;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  border: #356167 solid 0.5rem;
+
+}
+
+.qualificationsheading {
+  padding-bottom: 1rem;
+}
+
+.qualifications li {
+  padding-top: 1rem;
+  list-style: circle;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.quotedahl {
+  background-color: #356167;
+  grid-area: quotedahl;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  line-height: 3rem;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2rem;
+  border: #222548 solid 0.5rem;
+}
+
+.quoteeliot {
+  background-color: #356167;
+  grid-area: quoteeliot;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  line-height: 3rem;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2rem;
+  border: #222548 solid 0.5rem;
+}
+
+.sign {
+  grid-area: sign;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(assets/thisisthesign2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.skills {
+  background-color: #222548;
+  grid-area: skills;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  line-height: 1.5rem;
+  border: #356167 solid 0.5rem;
+}
+
+.skills-list li {
+  list-style: circle;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding-top: 1rem;
+}
+
+.skills h3 {
+  padding-bottom: 1rem;
+}
+
+.skillsend {
+  padding-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.possible {
+  grid-area: possible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(assets/possible2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.interestsheading {
+  background-color: #031926;
+  align-items: center;
+  grid-area: interestsheading;
+  border:  #356167 solid 0.5rem;
+}
+
+.interests {
+  background-color: #031926;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  grid-area: interests;
+  padding: 2rem 1rem;
+  border:  #356167 solid 0.5rem;
+}
+
+.interests img {
+  height: auto;
+  width: 70%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: solid 0.1rem #356167;
+  margin: 1rem;
+}
+
+
+footer {
+  background-color: #243446;
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  padding: 2rem 1rem;
+  margin: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+
+
+/*Media Query*/
+
+@media only screen and (min-width: 1200px) {
+
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 350px 400px 600px 300px 300px 500px 100px 800px 200px;
+    color: #f2f2da;
+    grid-template-areas:
+      "nav nav nav nav nav nav"
+      "header header header header header header"
+      "main main main main whoiam whoiam"
+      "dream dream dream qual qual qual"
+      "quotedahl quotedahl quotedahl sign sign sign"
+      "quoteeliot quoteeliot quoteeliot sign sign sign"
+      "skills skills skills skills possible possible"
+      "interestsheading interestsheading interestsheading interestsheading interestsheading interestsheading"
+      "interests interests interests interests interests interests"
+      "footer footer footer footer footer footer";
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav {
+    display:flex;
+    align-content: center;
+    justify-content: space-around;
+    padding-top:0.4rem;
+  }
+
+  .interestsheading {
+    background-color: #031926;
+    align-items: center;
+    grid-area: interestsheading;
+    padding: 2rem 1rem;
+  }
+
+  .interests {
+    background-color: #031926;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-area: interests;
+    padding: 2rem 1rem;
+  }
+
+  .interests img {
+    height: auto;
+    width: 20%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: solid 0.1rem #356167;
+    margin: 1rem;
+  }
+}
+
+
+/*Content Creator Page*/
+
+.cwcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  color: #f2f2da;
+  grid-template-areas: 
+    "nav"
+    "header"
+    "cwheading"
+    "cwintro"
+    "cwprocess"
+    "cwexampleheading"
+    "writing1"
+    "writing2"
+    "writing3"
+    "writing4"
+    "writing5"
+    "writing6"
+    "writing7"
+    "writing8"
+    "writing9"
+    "writing10"
+    "writing11"
+    "footer";
+  gap: 1rem;
+  margin-top: 1rem;
+  background-color: black;
+}
+
+.cwheading {
+  grid-area: cwheading;
+}
+
+.cwintro {
+  grid-area: cwintro;
+  background-color: #356167;
+  padding: 1rem;
+  border:#243446 solid 1rem;
+}
+
+.cwprocess {
+  grid-area: cwprocess;
+  background-color: #356167;
+}
+
+.cwprocess li {
+  list-style: circle;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding-top: 1rem;
+  list-style-position: inside;
+}
+
+.cwexampleheading {
+  grid-area: cwexampleheading;
+  background-color: #243446;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  border:#356167 solid 1rem;
+}
+
+
+.writing1 {
+  grid-area: writing1;
+  border: #59a0aa solid 1px;
+  padding: 1rem;
+  background-color: #356167;
+  line-height: 1.5rem;
+}
+
+.writing2 {
+  grid-area: writing2;
+  border: #59a0aa solid 1px;
+  padding: 1rem;
+  background-color: #243446;
+  line-height: 1.5rem;
+}
+
+.writing3 {
+  grid-area: writing3;
+  border: #59a0aa solid 1px;
+  padding: 1rem;
+  background-color: #222548;
+  line-height: 1.5rem;
+}
+
+.writing4 {
+  grid-area: writing4;
+  border: #59a0aa solid 1px;
+  padding: 1rem;
+  background-color: #031926;
+  line-height: 1.5rem;
+}
+
+.writing5 {
+  grid-area: writing5;
+  border: #59a0aa solid 1px;
+  padding: 1rem;
+  background-color: #356167;
+  line-height: 1.5rem;
+}
+
+.writing6 {
+  grid-area: writing6;
+  border: #59a0aa solid 1px;
+  padding: 1rem;
+  background-color: #243446;
+  line-height: 1.5rem;
+}
+
+.writing7 {
+  grid-area: writing7;
+  border: #59a0aa solid 1px;
+  padding: 1rem;
+  background-color: #222548;
+  line-height: 1.5rem;
+}
+
+.writing8 {
+  grid-area: writing8;
+  border: #59a0aa solid 1px;
+  padding: 1rem;
+  background-color: #031926;
+  line-height: 1.5rem;
+}
+
+.writing9 {
+  grid-area: writing9;
+  border: #59a0aa solid 1px;
+  padding: 1rem;
+  background-color: #356167;
+  line-height: 1.5rem;
+}
+
+.writing10 {
+  grid-area: writing10;
+  border: #59a0aa solid 1px;
+  padding: 1rem;
+  background-color: #243446;
+  line-height: 1.5rem;
+}
+
+.writing11 {
+  grid-area: writing11;
+  border: #59a0aa solid 1px;
+  padding: 1rem;
+  background-color: #222548;
+  line-height: 1.5rem;
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+  .cwcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    color: #f2f2da;
+    grid-template-areas:
+      "nav nav"
+      "header header"
+      "cwheading cwheading"
+      "cwintro cwintro"
+      "cwprocess cwprocess"
+      "cwexampleheading cwexampleheading"
+      "writing1 writing1"
+      "writing2 writing3"
+      "writing4 writing4"
+      "writing5 writing6"
+      "writing7 writing7"
+      "writing8 writing9"
+      "writing10 writing11"
+      "footer footer";
+    gap: 1rem;
+    margin-top: 1rem;
+    background-color: black;
+  }
+
+}
+
+
+/*Project Manager Page*/
+
+.pmcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  color: #f2f2da;
+  grid-template-areas:
+    "nav"
+    "header"
+    "pmheading"
+    "pmintro"
+    "pmprocess"
+    "footer";
+  gap: 1rem;
+  margin-top: 1rem;
+  background-color: black;
+}
+
+.pmheading {
+  grid-area: pmheading;
+}
+
+.pmintro {
+  grid-area: pmintro;
+  background-color: #356167;
+  padding: 1rem;
+  border:#243446 solid 1rem;
+
+}
+
+.pmprocess {
+  grid-area: pmprocess;
+  background-color: #356167;
+}
+
+.pmprocess li {
+  list-style: circle;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding-top: 1rem;
+  list-style-position: inside;
+}
+
+
+/*Proofreader Page*/
+
+.prcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  color: #f2f2da;
+  grid-template-areas:
+    "nav"
+    "header"
+    "prheading"
+    "printro"
+    "prprocess"
+    "prgreeting"
+    "prcertificate"
+    "prfeedback"
+    "footer";
+  gap: 1rem;
+  margin-top: 1rem;
+  background-color: black;
+}
+
+.prheading {
+  grid-area: prheading;
+}
+
+.printro {
+  grid-area: printro;
+  background-color: #356167;
+  padding: 1rem; 
+  border:#243446 solid 1rem;
+}
+
+.prprocess {
+  grid-area: prprocess;
+  background-color: #356167;
+ 
+}
+
+.prprocess li {
+  list-style: circle;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding-top: 1rem;
+  list-style-position: inside;
+}
+
+.prgreeting {
+  grid-area: prgreeting;
+  background-color:#243446;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding:1rem;
+  border:#356167 solid 1rem;
+}
+
+.prgreeting img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.prcertificate {
+  grid-area: prcertificate;
+  background-color: #243446;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding:1rem;
+  border:#356167 solid 1rem;
+}
+
+.prcertificate img {
+  max-width: 100%;
+  height: auto;
+}
+
+.prfeedback {
+  grid-area: prfeedback;
+  background-color: #243446;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding:1rem;
+  border:#356167 solid 1rem;
+}
+
+.prfeedback img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*Web Designer Page*/
+
+.wdcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  color: #f2f2da;
+  grid-template-areas:
+    "nav"
+    "header"
+    "wdheading"
+    "wdintro"
+    "wdprocess"
+    "cert1"
+    "cert2"
+    "cert3"
+    "cert4"
+    "cert5"
+    "cert6"
+    "footer";
+  gap: 1rem;
+  margin-top: 1rem;
+  background-color: black;
+}
+
+.wdheading {
+  grid-area: wdheading;
+}
+
+.wdintro {
+  grid-area: wdintro;
+  background-color: #356167;
+  padding: 1rem; 
+  border:#243446 solid 1rem;
+}
+
+.wdprocess {
+  grid-area: wdprocess;
+  background-color: #356167;
+ 
+}
+
+.wdprocess li {
+  list-style: circle;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding-top: 1rem;
+  list-style-position: inside;
+}
+
+
+
+
+
+.cert1 {
+  grid-area: cert1;
+  background-color: #243446;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding:1rem;
+  border:#356167 solid 1rem;
+}
+
+.cert2 {
+  grid-area: cert2;
+  background-color: #243446;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding:1rem;
+  border:#356167 solid 1rem;
+}
+
+.cert3 {
+  grid-area: cert3;
+  background-color: #243446;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding:1rem;
+  border:#356167 solid 1rem;
+}
+
+.cert4 {
+  grid-area: cert4;
+  background-color: #243446;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding:1rem;
+  border:#356167 solid 1rem;
+}
+
+.cert5 {
+  grid-area: cert5;
+  background-color: #243446;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding:1rem;
+  border:#356167 solid 1rem;
+}
+
+
+.cert6 {
+  grid-area: cert6;
+  background-color: #243446;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding:1rem;
+  border:#356167 solid 1rem;
+}
+
+
+
+
+
+
+
+.cert1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cert2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cert3 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cert4 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cert5 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cert6 img {
+  max-width: 100%;
+  height: auto;
+}
