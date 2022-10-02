@@ -361,7 +361,7 @@ ul {
   .interests {
     background-color: #031926;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     grid-area: interests;
@@ -451,7 +451,7 @@ ul {
   .interests {
     background-color: #031926;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     grid-area: interests;
